@@ -1,38 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Concert+One&family=Gloria+Hallelujah&display=swap');
+
+
+/* App.css */
+body {
+  background-color:darkcyan; /* Set the background color for the entire webpage */
+}
+
 .App {
+  background-color:aliceblue; /* Set the background color for the todo app box */
   text-align: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  margin-right: 500px;
+  margin-left: 500px;
+  padding: 50px;
+  border-radius: 10px;
+  box-sizing:content-box;
+  box-shadow: 10px 10px 5px rgba(3, 42, 42, 0.606);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-field {
+  font-family: 'Architects Daughter', cursive;
+  max-width: 5000px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid darkcyan;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* TodoList.css */
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* TodoListItem.css */
+.list-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.list-item button {
+  margin-left: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-item.completed {
+  background-color: rgb(134, 23, 23);
+}
+
+.list-item.in-progress {
+  background-color: rgb(4, 51, 67);
 }
